@@ -352,7 +352,12 @@ const navListItems = [
     label: "~cd hub",
     icon: CodeBracketSquareIcon,
     link: "http://hub.lugvitc.net/",
-  }
+  },
+
+  // {
+  //   label:"leaderBoard",
+  //   link:"#/LeaderBoard"
+  // }
 ];
 
 function NavList() {
@@ -392,6 +397,20 @@ function NavList() {
               className: "h-[18px] w-[18px] text-white",
             })}{" "}
             <span className="text-white "> ~cd contact</span>
+          </MenuItem>
+        </Typography>
+        <Typography
+          as="a"
+          href={"/#/LeaderBoard"}
+          variant="small"
+          color="gray"
+          className="font-light font-space text-xs  text-white"
+        >
+          <MenuItem className="flex items-center gap-2 lg:rounded-full hover:bg-[#1f2937]">
+            {React.createElement(PhoneIcon, {
+              className: "h-[18px] w-[18px] text-white",
+            })}{" "}
+            <span className="text-white "> ~cd leaderBoard</span>
           </MenuItem>
         </Typography>
     </ul>
